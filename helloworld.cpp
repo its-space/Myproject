@@ -9,9 +9,9 @@ int main()
 {
 	time_t ls_time;
 	time(&ls_time); 
-	string path = ls_time+".txt";
+	string path = ctime(&ls_time)+".txt";
 	fstream file;
-	file.open( path, ios::out );
+	file.open(path, ios::out );
 	if (!file)
 	{
 		return false;
