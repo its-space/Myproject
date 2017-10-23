@@ -9,7 +9,7 @@ using namespace std;
 
 
 int main()
-    {
+{
         char buf[32] = { 0 };
         time_t now;
         now = time(NULL);
@@ -36,4 +36,4 @@ int main()
 
         return 0;
 
-    }
+}
