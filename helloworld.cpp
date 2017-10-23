@@ -31,7 +31,7 @@ int main()
         }
         else
         {
-            myfile << "Auto test result!" << endl;
+            myfile << "auto test result!" << endl;
             myfile.close();
         }
 
