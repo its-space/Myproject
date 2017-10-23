@@ -30,7 +30,7 @@ using namespace std;
         }
         else
         {
-            myfile << "Auto test result !" << endl;
+            myfile << "Auto test result!" << endl;
             myfile.close();
         }
 
