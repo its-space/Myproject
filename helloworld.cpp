@@ -7,8 +7,9 @@ using namespace std;
 
 int main()
 {
-	string ls_time = system("time"); 
-	string path = ls_time+'.txt';
+	time_t ls_time;
+	time(&ls_time); 
+	string path = ls_time+".txt";
 	fstream file;
 	file.open( path, ios::out );
 	if (!file)
