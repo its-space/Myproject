@@ -2,14 +2,15 @@
 #include <stdlib.h> 
 #include <stdio.h>
 #include <fstream>
+#include   <time.h> 
 
 using namespace std;
 
 int main()
 {
-	time_t ls_time;
-	time(&ls_time); 
-	string path = ctime(&ls_time)+".txt";
+	CTime time = CTime::GetCurrentTime(); ///构造CTime对象
+	CString m_strTime = time.Format("%Y-%m-%d %H:%M:%S");  
+	string path = m_strTime +".txt";
 	fstream file;
 	file.open(path, ios::out );
 	if (!file)
