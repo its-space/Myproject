@@ -6,11 +6,25 @@
 
 using namespace std;
 
+struct tm
+{
+	int?tm_sec;??
+	int?tm_min;?
+	int?tm_hour;??
+	int?tm_mday;??
+	int?tm_mon;??
+	int?tm_year;?
+
+}
+
 int main()
 {
-	CTime time = CTime::GetCurrentTime(); ///构造CTime对象
-	CString m_strTime = time.Format("%Y-%m-%d %H:%M:%S");  
-	string path = m_strTime +".txt";
+	char buff[32] = {0};
+	time_t now;
+	now = time(NULL);
+	struct tm timeinfo = *localtime(&now);
+	strftime(buf,?sizeof(buf),?"%Y%m%d%H%M%S",?&timeinfo);??
+	string path = buf +".txt";
 	fstream file;
 	file.open(path, ios::out );
 	if (!file)
