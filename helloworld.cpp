@@ -20,6 +20,7 @@ int main()
         file.open(path.c_str(), ios::out);
         if (!file)
         {
+	    cout << "can not creat file!"<<endl;
             return false;
         }
         file.close();
