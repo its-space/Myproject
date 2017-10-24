@@ -8,8 +8,8 @@ using namespace std;
 
 
 
-int main()
-{
+    int main()
+    {
         char buf[32] = { 0 };
         time_t now;
         now = time(NULL);
@@ -20,7 +20,6 @@ int main()
         file.open(path.c_str(), ios::out);
         if (!file)
         {
-	    cout << "can not creat file!"<<endl;
             return false;
         }
         file.close();
@@ -31,10 +30,10 @@ int main()
         }
         else
         {
-            myfile << "auto test result!" << endl;
+            myfile << "Auto test result!" << endl;
             myfile.close();
         }
 
         return 0;
 
-}
+    }
