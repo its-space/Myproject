@@ -8,8 +8,8 @@ using namespace std;
 
 
 
-    int main()
-    {
+int main()
+{
         char buf[32] = { 0 };
         time_t now;
         now = time(NULL);
@@ -36,4 +36,4 @@ using namespace std;
 
         return 0;
 
-    }
+}
