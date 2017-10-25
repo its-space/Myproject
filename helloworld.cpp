@@ -34,6 +34,6 @@ int main()
             myfile.close();
         }
 
-        return 0
+        return 0;
 
 }
