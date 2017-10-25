@@ -33,7 +33,10 @@ int main()
             myfile << "Auto test result!" << endl;
             myfile.close();
         }
+        
+         //yangl add
+        cout << "a quick brown fox jumps over the lazy dog." << endl;
 
-        return 0
+        return 0;
 
 }
