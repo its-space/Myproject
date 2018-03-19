@@ -1,5 +1,5 @@
 from ubuntu
 COPY helloworld.cpp /mnt
-apt-get update
-apt-get install gcc
-gcc helloworld.cpp
+run apt update
+run apt install -y  g++
+run  g++ /mnt/helloworld.cpp
