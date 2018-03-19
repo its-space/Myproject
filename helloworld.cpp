@@ -36,6 +36,9 @@ int main()
         
          //yangl add
         cout << "a quick brown fox jumps over the lazy dog." << endl;
+        
+        //zhangjr add
+        cout << "test aliyun docker" << endl;
 
         return 0; 
 
